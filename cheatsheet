@@ -15,3 +15,7 @@ CREATE TABLE table_name (
   name_of_row DATATYPE
 );
 
+CREATE TABLE
+address_book=# \d
+
+select * from contacts;

@@ -34,13 +34,14 @@ end
 # db.close
 db.close
 
-# reads from database
-# db = PG.connect(:dbname => 'address_book',
-#   :host => 'localhost')
-# sql = "select first, age from contacts"
-# db.exec(sql) do |result|
-#   result.each do |row|
-#     puts row
-#   end
-# end
-# db.close
+reads from database
+db = PG.connect(:dbname => 'address_book',
+  :host => 'localhost')
+sql = "select first, age from contacts"
+db.exec(sql) do |result|
+  result.each do |row|
+    puts row
+  end
+end
+db.close
+
